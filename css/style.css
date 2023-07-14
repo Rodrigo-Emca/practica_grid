@@ -94,8 +94,16 @@ main {
     .promos {
         padding: 24px;
         background-color: #fff;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column: 1/-1; /* Le indicamos desde dónde hasta dónde queremos que vaya la grilla. En este caso, que ocupe toda la grilla. */
+        column-gap: 24px;
     }
 
         .promos article {
             background-color: #626974;
+            display: flex; /* Si bien estamos usando grid, podemos conbinar con flex, para ciertos casos más convenientes. */
+            align-items: center;
+            justify-content: center;
         }
