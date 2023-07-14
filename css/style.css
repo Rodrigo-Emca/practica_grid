@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,900&family=Raleway:ital,wght@1,500&display=swap');
+
+:root {
+    --color-principal: #102f49;
+    --ancho-maximo: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #102f49;
+    background-color: #e3e3e3;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos particulares */
+
+header,
+footer {
+    max-width: var(--ancho-maximo);
+    height: 100px;
+    background-color: var(--color-principal);
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+    header a,
+    footer a {
+        color: #ffea8d;
+    }
+
+        header img,
+        footer img {
+            vertical-align: middle;
+            margin: 0 12px;
+        }
+
+/* Main */
+main {
+    max-width: var(--ancho-maximo);
+    margin: auto;
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 160px;
+}
+
+    /* Section contenido */
+    .contenido {
+        background-color: #f4f4f4;
+        padding: 20px;
+        grid-column: span 4; /* para que tome 4 columnas */
+        column-gap: 24px;
+}
