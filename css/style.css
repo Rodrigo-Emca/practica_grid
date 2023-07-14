@@ -65,3 +65,37 @@ main {
         grid-column: span 4; /* para que tome 4 columnas */
         column-gap: 24px;
 }
+
+    .contenido article {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 1fr;
+        column-gap: 24px;
+    }
+
+        .contenido article img {
+            padding-bottom: 24px;
+            grid-column: span 2;
+            grid-row: span 2;
+            width: 100%;
+        }
+
+    /* Section notas */
+    .notas {
+        background-color: #974343;
+    }
+        .notas article {
+            color: #f4f4f4;
+            text-align: center;
+            margin-top: 56px;
+        }
+
+    /* Section promos */
+    .promos {
+        padding: 24px;
+        background-color: #fff;
+    }
+
+        .promos article {
+            background-color: #626974;
+        }
